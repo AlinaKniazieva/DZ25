@@ -1,0 +1,425 @@
+{
+  "id": "9a45b4aa-b858-478a-91f8-2fd22ad9943b",
+  "version": "2.0",
+  "name": "test_allo",
+  "url": "https://allo.ua/",
+  "tests": [{
+    "id": "dd529601-8e90-4c62-b5c2-421dd5bf993f",
+    "name": "test registration",
+    "commands": [{
+      "id": "4437dfca-e31c-4486-9126-35ab39534488",
+      "comment": "",
+      "command": "open",
+      "target": "https://allo.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fdf230d0-7aa7-4d33-9c7c-be4c80c1bbe7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9159e5a4-d68b-4634-84c0-6e4fd377f128",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[4]/div/button",
+      "targets": [
+        ["css=.mh-profile > .mh-button", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/header/div/div[2]/div[4]/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/button", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "459630b6-5f10-4487-809e-900a08cb827a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[4]/div/button",
+      "targets": [
+        ["css=.mh-profile > .mh-button", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/header/div/div[2]/div[4]/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f525ceba-781b-4112-99dc-8a209018953b",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=#customer-popup-menu",
+      "targets": [
+        ["id=customer-popup-menu", "id"],
+        ["css=#customer-popup-menu", "css:finder"],
+        ["xpath=//div[@id='customer-popup-menu']", "xpath:attributes"],
+        ["xpath=//div[8]/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "87250f4f-54ca-4aea-8faa-f4e39fd31b32",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-tab:nth-child(2)",
+      "targets": [
+        ["css=.login-tab:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='customer-popup-menu']/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]/div/ul/li[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2bd5ea6-b033-4cb5-a4ef-57d47d1171e6",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=v-register-name", "id"],
+        ["name=firstname", "name"],
+        ["css=#v-register-name", "css:finder"],
+        ["xpath=//input[@id='v-register-name']", "xpath:attributes"],
+        ["xpath=//form[@id='form-validate-register']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "0f3afa2e-63f7-4e6b-b6a2-25c7584a78f0",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form[@id='form-validate-register']/div/div/div/input",
+      "targets": [
+        ["id=v-register-name", "id"],
+        ["name=firstname", "name"],
+        ["css=#v-register-name", "css:finder"],
+        ["xpath=//input[@id='v-register-name']", "xpath:attributes"],
+        ["xpath=//form[@id='form-validate-register']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Alina"
+    }, {
+      "id": "aff7dbb2-3759-4324-9ea4-e7ae8a0f5cde",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='v-register_telephone_number']",
+      "targets": [
+        ["id=v-register_telephone_number", "id"],
+        ["name=telephone", "name"],
+        ["css=#v-register_telephone_number", "css:finder"],
+        ["xpath=//input[@id='v-register_telephone_number']", "xpath:attributes"],
+        ["xpath=//form[@id='form-validate-register']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9710504a-f5e8-42c0-b82d-b713ddfb360b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='v-register_telephone_number']",
+      "targets": [],
+      "value": "977312106"
+    }, {
+      "id": "7b113b63-0e9f-453e-9ac1-c64b105a38cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#v-register-email",
+      "targets": [
+        ["id=v-register-email", "id"],
+        ["css=#v-register-email", "css:finder"],
+        ["xpath=//input[@id='v-register-email']", "xpath:attributes"],
+        ["xpath=//form[@id='form-validate-register']/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b29cb218-178c-408e-9082-20c78f63913c",
+      "comment": "",
+      "command": "type",
+      "target": "css=#v-register-email",
+      "targets": [],
+      "value": "berries0702@gmail.com"
+    }, {
+      "id": "fa4e1c83-5e89-4593-ba94-98021bcc3f8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#vregister-password",
+      "targets": [
+        ["id=vregister-password", "id"],
+        ["name=password", "name"],
+        ["css=#vregister-password", "css:finder"],
+        ["xpath=//input[@id='vregister-password']", "xpath:attributes"],
+        ["xpath=//form[@id='form-validate-register']/div/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad5741e9-8969-49d9-9f82-72f7873502f8",
+      "comment": "",
+      "command": "type",
+      "target": "css=#vregister-password",
+      "targets": [],
+      "value": "11111111"
+    }, {
+      "id": "f04c4bd6-73d3-4328-9e97-8ec6ea620e24",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Зареєструватися')]",
+      "targets": [
+        ["name=send", "name"],
+        ["css=.modal-submit-button", "css:finder"],
+        ["xpath=//button[@name='send']", "xpath:attributes"],
+        ["xpath=//form[@id='form-validate-register']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Зареєструватися')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "68df40d0-e54b-4e7b-ba2a-9b010c0370d0",
+    "name": "test add favorite",
+    "commands": [{
+      "id": "0374471b-e61c-43b9-9a54-da60bcf6f05d",
+      "comment": "",
+      "command": "open",
+      "target": "https://allo.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "018dbe37-1c1b-4252-83b9-15b1b8165deb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d37f6c0-d909-4051-9d57-4bb58c4f609a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[4]/div/button",
+      "targets": [
+        ["css=.mh-profile > .mh-button", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/header/div/div[2]/div[4]/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/button", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "bdd6a6ac-e019-4680-bb4c-2c8db91d7b9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#search-form__input",
+      "targets": [
+        ["id=search-form__input", "id"],
+        ["name=search", "name"],
+        ["css=#search-form__input", "css:finder"],
+        ["xpath=//input[@id='search-form__input']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/header/div/div[2]/div[3]/form/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19bac84a-8678-4d36-b22d-0671d3aa126f",
+      "comment": "",
+      "command": "type",
+      "target": "css=#search-form__input",
+      "targets": [],
+      "value": "samsung"
+    }, {
+      "id": "9420033d-991f-44b6-9b03-4bc722ebe26f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-result__nav-link",
+      "targets": [
+        ["css=.search-result__nav-link", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/header/div/div[2]/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0b3c04a-89f7-4c50-84fd-b428cb3a203f",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.search-result__nav-link",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "7692dc9b-ee80-4ab3-8112-9e8cd68544c5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(@href, 'https://allo.ua/ua/products/mobile/samsung-galaxy-s23-ultra-12-256-black-sm-s918bzkgsek.html')])[3]",
+      "targets": [
+        ["linkText=Samsung Galaxy S23 Ultra 12/256 BLACK (SM-S918BZKGSEK)", "linkText"],
+        ["css=.products-layout__item:nth-child(1) .product-card__title", "css:finder"],
+        ["xpath=//a[contains(text(),'Samsung Galaxy S23 Ultra 12/256 BLACK (SM-S918BZKGSEK)')]", "xpath:link"],
+        ["xpath=//div[@id='__layout']/div/div/div[2]/div/div[2]/div[2]/div/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://allo.ua/ua/products/mobile/samsung-galaxy-s23-ultra-12-256-black-sm-s918bzkgsek.html')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Samsung Galaxy S23 Ultra 12/256 BLACK (SM-S918BZKGSEK)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0695e228-655c-4101-b7a6-be06240dc8cf",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=(//a[contains(@href, 'https://allo.ua/ua/products/mobile/samsung-galaxy-s23-ultra-12-256-black-sm-s918bzkgsek.html')])[3]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "c7368e1e-852e-4ec0-a008-8c508e5d73e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.p-trade-wrapper__actions > .favorite > .vi",
+      "targets": [
+        ["css=.p-trade-wrapper__actions > .favorite > .vi", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ad2b511-6bab-4b3b-8c70-48356a3695af",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.p-trade-wrapper__actions > .favorite > .vi",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "757c209b-7e7d-494d-a0ff-cce26f6a64e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#auth",
+      "targets": [
+        ["id=auth", "id"],
+        ["css=#auth", "css:finder"],
+        ["xpath=//input[@id='auth']", "xpath:attributes"],
+        ["xpath=//form[@id='form-validate-login']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bacf6d15-9639-4491-a0a8-dd97a875fa6e",
+      "comment": "",
+      "command": "type",
+      "target": "css=#auth",
+      "targets": [],
+      "value": "kniazieva.aa@gmail.com"
+    }, {
+      "id": "39b8f243-b718-426e-ac4b-fba72e810333",
+      "comment": "",
+      "command": "type",
+      "target": "css=#v-login-password",
+      "targets": [
+        ["id=v-login-password", "id"],
+        ["name=password", "name"],
+        ["css=#v-login-password", "css:finder"],
+        ["xpath=//input[@id='v-login-password']", "xpath:attributes"],
+        ["xpath=//form[@id='form-validate-login']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1111111"
+    }, {
+      "id": "4acf8ba0-18be-4685-81d4-a31c2b9679a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-submit-button",
+      "targets": [
+        ["css=.modal-submit-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[33]", "xpath:attributes"],
+        ["xpath=//form[@id='form-validate-login']/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a1d2664e-0e91-4900-afd5-36017cf8b5f0",
+    "name": "test change city",
+    "commands": [{
+      "id": "feeeb397-6d77-4f01-95d5-45d8d2df8b96",
+      "comment": "",
+      "command": "open",
+      "target": "https://allo.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfbd2af6-f002-4c55-8a82-a4edbcdc75d0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0b6b879-3d62-4d9c-b6c2-f9a8a38b34f4",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[4]/div/button",
+      "targets": [
+        ["css=.mh-profile > .mh-button", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/header/div/div[2]/div[4]/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/button", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "234b0253-b64a-4bfc-9e51-29683d0d6d0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mh-loc > .mh-button",
+      "targets": [
+        ["css=.mh-loc > .mh-button", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/header/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Київ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba575625-3a15-4bf7-822d-6c412a76b327",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.mh-loc > .mh-button",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "066bbcf6-d29a-4071-8534-6aaea38caf8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#city",
+      "targets": [
+        ["id=city", "id"],
+        ["name=city", "name"],
+        ["css=#city", "css:finder"],
+        ["xpath=//input[@id='city']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/header/div/div/div/section/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d16818bf-c4f4-49df-b233-5cf6f026f8e8",
+      "comment": "",
+      "command": "type",
+      "target": "id=city",
+      "targets": [
+        ["id=city", "id"],
+        ["name=city", "name"],
+        ["css=#city", "css:finder"],
+        ["xpath=//input[@id='city']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/header/div/div/div/section/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "сєвє"
+    }, {
+      "id": "5f4494a0-1ff7-4bc4-85eb-8e40c3865f30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.complete-value",
+      "targets": [
+        ["css=.complete-value", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/header/div/div/div/section/div/form/div/div[2]/div/ul/li/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'родонецьк')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e0dcd0e2-da52-400e-bccf-c0419e6187a8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["dd529601-8e90-4c62-b5c2-421dd5bf993f"]
+  }],
+  "urls": ["https://allo.ua/"],
+  "plugins": []
+}
